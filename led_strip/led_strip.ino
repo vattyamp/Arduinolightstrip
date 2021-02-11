@@ -1,13 +1,12 @@
 // color swirl! connect an RGB LED to the PWM pins as indicated
 // in the #defines
-// public domain, enjoy!
-#include <IRremote.h>
+
  
 #define REDPIN 5
 #define GREENPIN 6
 #define BLUEPIN 3
  
-#define FADESPEED 5     // make this higher to slow down
+#define FADESPEED 15     // make this higher to slow down
 
 
 void setup() {
@@ -51,7 +50,7 @@ void loop() {
     delay(FADESPEED);
   } 
 }
-
-void onlyRed() {analogWrite(REDPIN, b);}
-void onlyGreen() {analogWrite(GREENPIN, b);}
-void onlyBlue() {analogWrite(BLUEPIN, b);}
+//
+//void onlyRed() {analogWrite(REDPIN, b);}
+//void onlyGreen() {analogWrite(GREENPIN, b);}
+//void onlyBlue() {analogWrite(BLUEPIN, b);}
